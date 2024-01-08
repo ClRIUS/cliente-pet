@@ -4,8 +4,6 @@ import br.com.petz.clientepet.cliente.domain.Sexo;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.AccessLevel;
-import lombok.Getter;
 import lombok.Value;
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -26,6 +24,5 @@ public class ClienteRequest {
     @CPF
     private String cpf;
     @NotNull
-    @Getter(value = AccessLevel.NONE)
     private Boolean aceitaTermos;
 }
