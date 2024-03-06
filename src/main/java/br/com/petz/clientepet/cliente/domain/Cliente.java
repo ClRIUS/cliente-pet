@@ -38,8 +38,8 @@ public class Cliente {
     @NotNull
     private Boolean aceitaTermos;
 
-    private LocalDateTime dataHoraCadastro;
-    private LocalDateTime dataHoraUltimaAlteracao;
+    private LocalDateTime dataHoraDoCadastro;
+    private LocalDateTime dataHoraDaUltimaAlteracao;
 
     public Cliente(ClienteRequest clienteRequest) {
         this.nomeCompleto = clienteRequest.getNomeCompleto();
@@ -50,6 +50,6 @@ public class Cliente {
         this.dataNascimento = clienteRequest.getDataNascimento();
         this.cpf = clienteRequest.getCpf();
         this.aceitaTermos = clienteRequest.getAceitaTermos();
-        this.dataHoraCadastro = LocalDateTime.now();
+        this.dataHoraDoCadastro = LocalDateTime.now();
     }
 }
