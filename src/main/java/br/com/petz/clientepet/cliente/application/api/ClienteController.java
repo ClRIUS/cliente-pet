@@ -1,6 +1,7 @@
 package br.com.petz.clientepet.cliente.application.api;
 
 import br.com.petz.clientepet.cliente.application.service.ClienteService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,9 +49,10 @@ public class ClienteController implements ClienteAPI {
     }
 
     @Override
-    public void alteraCliente(UUID idCliente, ClienteAlteracaoRequest clienteAlteracaoRequest) {
+    public void alteraCliente(UUID idCliente, @Valid ClienteAlteracaoRequest clienteAlteracaoRequest) {
         log.info("[inicia] ClienteController - alteraCliente");
         log.info("[idCliente] {}", idCliente);
+        clienteService.alteraCliente(idCliente, clienteAlteracaoRequest);
         log.info("[finaliza] ClienteController - alteraCliente");
     }
 }
