@@ -1,6 +1,6 @@
 package br.com.petz.clientepet.pet.application.api;
 
-import br.com.petz.clientepet.pet.service.PetService;
+import br.com.petz.clientepet.pet.application.service.PetService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;

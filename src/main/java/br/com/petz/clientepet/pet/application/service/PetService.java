@@ -1,4 +1,4 @@
-package br.com.petz.clientepet.pet.service;
+package br.com.petz.clientepet.pet.application.service;
 
 import br.com.petz.clientepet.pet.application.api.PetRequest;
 import br.com.petz.clientepet.pet.application.api.PetResponse;
